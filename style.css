@@ -1,0 +1,225 @@
+@media (min-width: 1200px) {
+    container{
+        max-width: 1600px;
+    }
+}
+
+#wrapper {
+    background-image: url("/asset/1yn5zx.png");
+    background-repeat: repeat;
+    background-position: 100% 0;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
+#title {
+    height: auto;
+    width: 50%;
+    min-width: 432px;
+    min-height: 160px;
+}
+
+#title-dog {
+    height: 15%;
+    width: 10%;
+    min-width: 110px;
+    min-height: 80px;
+    animation: example 10s linear infinite;
+}
+
+#speaker {
+    margin-top: 7px;
+    height:auto;
+    width:10%;
+    min-width: 50px;
+    min-height: 50px;
+    float:right;
+}
+
+#back {
+    margin-top: 13px;
+    height:auto;
+    width:80px;
+    min-height: 50px;
+    float:left;
+}
+
+#tutorial {
+    font-family: 'VT323';
+}
+
+.pixel:hover {
+    transform: scale(1.2);
+}
+
+.pixel {
+    font-size: 25px;
+    color: white;
+    height: auto;
+    margin: 10px;
+    font-family: 'VT323';
+    
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    text-transform: uppercase;
+    
+    cursor: pointer;
+    
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+  
+.pixel:active {
+    top: 2px;
+}
+
+.pixel {
+    line-height: 0;
+    
+    image-rendering: optimizeSpeed;
+    image-rendering: -moz-crisp-edges; /* Firefox */
+    image-rendering: -o-crisp-edges; /* Opera */
+    image-rendering: -webkit-optimize-contrast; /* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor; /* IE (non-standard property) */
+    
+    border-style: solid;
+    border-width: 20px;
+    -moz-border-image: url(/asset/sREM8Yn.png) 20 stretch;
+    -webkit-border-image: url(/asset/sREM8Yn.png) 20 stretch;
+    -o-border-image: url(/asset/sREM8Yn.png) 20 stretch;
+    border-image: url(/asset/sREM8Yn.png) 20 stretch;
+}
+  
+  .pixel p {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    width: auto;
+    text-align: center;
+    margin: -20px -20px;
+    line-height: 20px;
+    padding: 10px 20px;
+    
+    background: #000000;
+    background:
+        linear-gradient(135deg, transparent 10px, #000000 0) top left,
+        linear-gradient(225deg, transparent 10px, #000000 0) top right,
+        linear-gradient(315deg, transparent 10px, #000000 0) bottom right,
+        linear-gradient(45deg,  transparent 10px, #000000 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    background-image:
+        radial-gradient(circle at 0 0, rgba(204,0,0,0) 14px, #000000 15px),
+        radial-gradient(circle at 100% 0, rgba(204,0,0,0) 14px, #000000 15px),
+        radial-gradient(circle at 100% 100%, rgba(204,0,0,0) 14px, #000000 15px),
+        radial-gradient(circle at 0 100%, rgba(204,0,0,0) 14px, #000000 15px);
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
+}
+
+::-webkit-input-placeholder {
+    text-align: center;
+    padding-right: 14px;
+}
+
+input {
+    font-family: 'VT323';
+    font-size: 24px;
+    padding-left: 20px;
+    border-color: rgb(93, 58, 12);
+    border-width: 5px;
+    border-radius: 20px;
+    background-color:rgb(127, 93, 49);
+    box-shadow: none;
+    color: white;
+}
+
+#player {
+    font-family: 'VT323';
+    text-decoration: underline;
+    padding-left: 2px;
+}
+
+#list  {
+    font-size: 24px;
+    list-style-type: none;  
+    padding-left: 4px;
+}
+
+#body {
+    height: 70%;
+    width: 100%;
+}
+
+#footer {
+    height: 20%;
+    width: 100%;
+    position:fixed;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 0;
+  }
+
+.grid-item {
+    padding: 0;
+    font-size: 30px;
+    text-align: center;
+}
+
+#dog-sleep {
+    height: auto;
+    width: 15%;
+    min-height: 150px;
+    min-width: 150px;
+}
+
+#footer {
+    height: 180px;
+    position: absolute;
+    bottom: 0;
+}
+
+.bone {
+    padding: 0;
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bone-y {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background: none;
+    justify-content: space-around;
+}
+
+#dog-sleep {
+    padding-top: 40px;
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      transform: scale(1.2, 1.2);
+    }
+    100% {
+      transform: scale(1, 1);
+    }
+}
