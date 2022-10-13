@@ -60,7 +60,7 @@ function countdown() {
         if (seconds > 0) {
             setTimeout(tick, 1000);
         } else {
-            document.getElementById("dog-sleep").src = "/asset/dog_title.png";
+            document.getElementById("dog-sleep").src = "asset/dog_title.png";
             document.getElementById("dog-sleep").style.animation="zoom-in-zoom-out 2s infinite";
             document.getElementById("playAgain").style.visibility = "visible";
             document.getElementById("backTohome").style.visibility = "visible";
@@ -82,7 +82,7 @@ function countdown() {
 }
 
 function playHover() {
-    const music = new Audio('/asset/mixkit-positive-interface-beep-221.wav');
+    const music = new Audio('asset/mixkit-positive-interface-beep-221.wav');
     music.play();
 }
 function playAgain() {
@@ -122,28 +122,28 @@ function boneCount() {
         var boneButton = document.createElement("button");
         boneButton.className = "bone";
         boneButton.id = i;
-        boneButton.innerHTML = "<img src='/asset/bonee.png' width='60px' onmouseover='playHover(this)'>";
+        boneButton.innerHTML = "<img src='asset/bonee.png' width='60px' onmouseover='playHover(this)'>";
         boneButton.setAttribute("onClick", "bombCheck(this.id)");
         divLeft.appendChild(boneButton);
 
         var boneButton = document.createElement("button");
         boneButton.className = "bone";
         boneButton.id = boneSum + i;
-        boneButton.innerHTML = "<img src='/asset/bonee.png' width='60px' onmouseover='playHover(this)'>";
+        boneButton.innerHTML = "<img src='asset/bonee.png' width='60px' onmouseover='playHover(this)'>";
         boneButton.setAttribute("onClick", "bombCheck(this.id)");
         divRight.appendChild(boneButton);
 
         var boneButton = document.createElement("button");
         boneButton.className = "bone-y";
         boneButton.id = boneSum*2 + i;
-        boneButton.innerHTML = "<img src='/asset/bonee.png' width='60px' onmouseover='playHover(this)'>";
+        boneButton.innerHTML = "<img src='asset/bonee.png' width='60px' onmouseover='playHover(this)'>";
         boneButton.setAttribute("onClick", "bombCheck(this.id)");
         divBottom.appendChild(boneButton);
 
         var boneButton = document.createElement("button");
         boneButton.className = "bone-y";
         boneButton.id = boneSum*3 + i;
-        boneButton.innerHTML = "<img src='/asset/bonee.png' width='60px' onmouseover='playHover(this)'>";
+        boneButton.innerHTML = "<img src='asset/bonee.png' width='60px' onmouseover='playHover(this)'>";
         boneButton.setAttribute("onClick", "bombCheck(this.id)");
         divUpper.appendChild(boneButton);
     }
@@ -151,7 +151,7 @@ function boneCount() {
 
 function bombCheck(clicked) {
     if (bomb == clicked) {
-        document.getElementById("dog-sleep").src = "/asset/dog_title.png";
+        document.getElementById("dog-sleep").src = "asset/dog_title.png";
         document.getElementById("dog-sleep").style.animation="zoom-in-zoom-out 2s infinite";
         document.getElementById("playAgain").style.visibility = "visible";
         document.getElementById("backTohome").style.visibility = "visible";
